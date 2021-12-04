@@ -1,1 +1,1 @@
-worker: python3 -m ChannelAutoPost
+web: python3 -m ChannelAutoPost
