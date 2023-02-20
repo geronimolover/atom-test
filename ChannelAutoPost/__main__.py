@@ -13,13 +13,13 @@ log = logging.getLogger(__name__)
 @ChannelAutoPost.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
     await event.reply(
-        f"Hello! I am a **Channel Auto Post bot**, I can help you manage your channel efficiently. You need to deploy your own instance for that from the source given below! :)", 
+        f"Hello! I am a **Channel Auto Post bot**, I can help you all manage your channel efficiently. You need to deploy your own instance for that from the source given below! :)", 
         buttons=[
             [
                 Button.url("Source", "https://github.com/EmiliaDevs/ChannelAutoPost"),
-                Button.url("Developer", "https://telegram.me/GodDrick"),                
+                Button.url("Developer", "https://telegram.me/GodDrick"),
             ]
-        ], 
+        ],
     )
 
 
@@ -40,13 +40,13 @@ async def help(event):
 @ChannelAutoPostUB.on(events.NewMessage(pattern="^.alive$", outgoing=True))
 async def alive_ub(event):
     await event.edit("Sup? I am alive :)")
-    
-    
+
+
 @ChannelAutoPost.on(events.NewMessage(pattern="^/alive$", func=lambda e: e.is_private, from_users=Config.OWNER_ID))
 async def alive_bot(event):
     await event.reply("Sup? I am alive :)")
-    
-    
+
+
 if __name__ == "__main__":
     ChannelAutoPost.start(bot_token=Config.BOT_TOKEN)
     log.info("Bot Successfully Started....")
@@ -55,13 +55,13 @@ if __name__ == "__main__":
         if not Config.SESSION:
             log.error("SESSION is missing... Bot is quitting. Kindly fill all the required vars to get it started!")
             quit(1)
-        ChannelAutoPostUB.start()        
+        ChannelAutoPostUB.start()
     if len(argv) not in (1, 3, 4):
         ChannelAutoPost.disconnect()
     else:
         log.info("--------------------------------------")
         log.info("|> Channel AutoPost Bot By @GodDrick <|")
         log.info("--------------------------------------")
-        log.info("Tele Version: " + __version__)        
+        log.info("Tele Version: " + __version__)
         log.info("You bot is now running, Do {}alive to confirm!".format("." if Config.USE_AS_USERBOT else "/"))
-        ChannelAutoPost.run_until_disconnected()    
+        ChannelAutoPost.run_until_disconnected()
