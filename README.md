@@ -1,17 +1,17 @@
 # ChannelAutoPost
 A Channel Auto Post (User)Bot To Forward All New Posts Of A Channel To Another!
-
+hihi
 Make sure to add bot to both/all the channel and promote, if you are using userbot you
 just need to be admin in the `TO_CHANNEL`, and just join the `FROM_CHANNEL` channels to forward simple :)
 
-### Session String 
+### Session String
 <a href="https://replit.com/@SupOK/StringSession#main.py#main.py" target="_blank"><img src="https://img.shields.io/badge/run-session.py-red?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>    
 
 ### Installation Guide:
 <details>
 <summary>Local</summary>
 <br>
-  
+
 #### The Normal Way
 
 Simply clone the repository and run the main file:
@@ -44,9 +44,9 @@ class Config(Var):
 <details>
 <summary>Heroku</summary>
 <br>
-  
+
 #### Heroku Configuration
-  
+
 Simply just leave the Config as it is.
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/EmiliaDevs/ChannelAutoPost)
@@ -58,14 +58,14 @@ Simply just leave the Config as it is.
     - `APP_ID`:   You can get this value from https://my.telegram.org
     - `API_HASH`:   You can get this value from https://my.telegram.org
 - The userbot will not work without setting the mandatory vars.
-- 
+-
 </details>
 
 ## Disclaimer:
 ```
     	Improper use may lead to ban.
     	I am not responsible if you misuse this bot.
-      
+
 ```
 ## Credits:
 >> [Lonami](https://github.com/LonamiWebs), for [Telethon](https://github.com/LonamiWebs/Telethon)
